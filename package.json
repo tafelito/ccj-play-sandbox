@@ -1,0 +1,55 @@
+{
+  "name": "blitz-js",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "blitz dev",
+    "build": "blitz build",
+    "start": "blitz start",
+    "studio": "blitz prisma studio",
+    "codegen": "blitz codegen",
+    "blitz": "blitz",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "husky install"
+  },
+  "browserslist": ["defaults"],
+  "prisma": {
+    "schema": "db/schema.prisma"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": ["eslint --fix"]
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "1.1.1",
+    "@chakra-ui/react": "1.7.4",
+    "@emotion/react": "11.7.1",
+    "@emotion/styled": "11.6.0",
+    "@hookform/resolvers": "2.5.2",
+    "@prisma/client": "latest",
+    "blitz": "0.45.0",
+    "framer-motion": "4.1.17",
+    "lodash": "4.17.21",
+    "node": "12.18.4",
+    "prisma": "3.8.0",
+    "react": "alpha",
+    "react-dom": "alpha",
+    "react-hook-form": "7.8.2",
+    "react-icons": "4.2.0",
+    "zod": "3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "7.30.0",
+    "husky": "6.0.0",
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
+    "typescript": "~4.3",
+    "ts-jest": "^26.4.1"
+  },
+  "private": true
+}
